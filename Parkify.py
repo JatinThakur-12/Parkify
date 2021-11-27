@@ -10,8 +10,6 @@ import numpy as np
 import pytesseract
 import csv
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\JATIN\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-# whiteList = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-# tessBaseApi.setVariable(TessBaseAPI.VAR_CHAR_WHITELIST,whiteList)
 def imgrec(temp):#for image detection 
     car= cv2.imread(temp,cv2.IMREAD_COLOR)
     car = cv2.resize(car, (600,400) )
